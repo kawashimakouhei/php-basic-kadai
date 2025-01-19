@@ -15,7 +15,7 @@ class Food
     // 各プロパティの値を取得するメソッド
     public function show_price()
     {
-        return $this->price;
+        echo $this->price.'<br>';
     }
 }
 
@@ -36,7 +36,7 @@ class Animal
     // 各プロパティの値を取得するメソッド
     public function show_height()
     {
-        return $this->height;
+        echo $this->height.'<br>';
     }
 }
 
@@ -54,8 +54,7 @@ $tiger = new Animal (
 print_r($curry);
 print_r($tiger);
 
-echo "" . $curry->show_price() . PHP_EOL;
-echo "" . $tiger->show_height() . PHP_EOL;
-
+$curry->show_price();
+$tiger->show_height();
 
 ?>
